@@ -168,9 +168,16 @@ body {
 
 /* Task 4 */
 
-.task-4.container {}
+.task-4.container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
 
-.task-4 .item-5 {}
+.task-4 .item-5 {
+    grid-column-end: span 2;
+    /*Definir le nombre de colonne que peut contenir une ligne*/
+}
 
 
 /* Task 5 */
